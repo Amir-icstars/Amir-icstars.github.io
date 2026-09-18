@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
   ============================================================
   PORTFOLIO STARTER TEMPLATE
@@ -12,115 +12,142 @@
   ============================================================
 -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amir Husseini — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- REPLACE: This shows in the browser tab -->
-  <title>[Your Name] — Portfolio</title>
+  <body>
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar">
+      <a href="#top" class="nav-logo">Amir Husseini</a>
 
-  <!-- This links your styles.css file to this page -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
+      <!-- These links jump to sections further down the page -->
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
-<body>
+    <!-- ===================== HERO / INTRO ===================== -->
+    <header id="top" class="hero">
+      <!-- REPLACE: your name -->
+      <h1>Hi, I'm Amir Husseini</h1>
 
-  <!-- ===================== NAVIGATION ===================== -->
-  <nav class="navbar">
-    <!-- REPLACE: your name or a logo/initials -->
-    <a href="#top" class="nav-logo">[Your Name]</a>
+      <!-- REPLACE: one sentence about who you are -->
+      <p class="tagline">
+        Enthusiastic fullstack developer building things that matter.
+      </p>
 
-    <!-- These links jump to sections further down the page -->
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+      <a href="#projects" class="button">See My Work</a>
+    </header>
 
-  <!-- ===================== HERO / INTRO ===================== -->
-  <header id="top" class="hero">
-    <!-- REPLACE: your name -->
-    <h1>Hi, I'm [Your Name]</h1>
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm a Full Stack Developer who enjoys building web applications from
+        start to finish. I'm continuously learning new technologies, frameworks,
+        and best practices to improve my skills in both front-end and back-end
+        development. I am passionate about creating user-friendly, scalable, and
+        efficient solutions that solve real-world problems. As I grow in my
+        career, I am excited to work on innovative projects, collaborate with
+        talented teams, and contribute to developing impactful digital products.
+      </p>
 
-    <!-- REPLACE: one sentence about who you are -->
-    <p class="tagline">[Aspiring software developer building things that matter.]</p>
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>REST APIs</li>
+        <li>MongoDB</li>
+        <li>SQL</li>
+        <li>Git &amp; GitHub</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </section>
 
-    <a href="#projects" class="button">See My Work</a>
-  </header>
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <!-- REPLACE: 2-3 sentences about your background, goals, and what you're learning -->
-    <p>
-      [Write a short paragraph here. Who are you? What are you learning?
-      What kind of work do you want to do? Keep it friendly and honest —
-      this is the first impression people get of you.]
-    </p>
+      <div class="project-grid">
+        <!-- PROJECT CARD 1 — copy this whole block to add more projects -->
+        <article class="project-card">
+          <!-- REPLACE: project name -->
+          <h3>Task Management App</h3>
+          <p>
+            A full-stack task management application built with React, Node.js,
+            Express, and MongoDB. Users can create, update, and organize tasks.
+            This project helped me learn authentication, REST APIs, and database
+            integration.
+          </p>
+          <!-- REPLACE: link to the live site or GitHub repo -->
+          <a
+            href="[https://github.com/yourusername/project]"
+            class="project-link"
+            >View Project</a
+          >
+        </article>
 
-    <h3>Skills</h3>
-    <!-- REPLACE: add or remove skills as a simple list -->
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>[JavaScript]</li>
-      <li>[Git &amp; GitHub]</li>
-      <li>[Add your own]</li>
-    </ul>
-  </section>
+        <!-- PROJECT CARD 2 -->
+        <article class="project-card">
+          <h3>E-Commerce Store</h3>
+          <p>
+            An online shopping platform featuring product listings, shopping
+            cart, user authentication, and payment integration. Built using
+            React, Express, MongoDB, and Stripe APIs.
+          </p>
+          <a
+            href="[https://github.com/yourusername/project]"
+            class="project-link"
+            >View Project</a
+          >
+        </article>
 
-  <!-- ===================== PROJECTS ===================== -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
+        <!-- PROJECT CARD 3 -->
+        <article class="project-card">
+          <h3>Developer Portfolio Website</h3>
+          <p>
+            A responsive personal portfolio website showcasing my projects,
+            technical skills, and contact information. Built with HTML, CSS, and
+            JavaScript while focusing on modern UI design and performance.
+          </p>
+          <a
+            href="https://github.com/Amir-icstars/Amir-icstars.github.io"
+            class="project-link"
+            >View Project</a
+          >
+        </article>
+      </div>
+    </section>
 
-    <div class="project-grid">
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+      <h2>Get In Touch</h2>
+      <p>
+        I'm always interested in new opportunities, exciting projects, and
+        connecting with other developers. Feel free to reach out!
+      </p>
 
-      <!-- PROJECT CARD 1 — copy this whole block to add more projects -->
-      <article class="project-card">
-        <!-- REPLACE: project name -->
-        <h3>[Project Name]</h3>
-        <!-- REPLACE: 1-2 sentences on what it is and what you built -->
-        <p>[What is this project? What did you build it with? What did you learn?]</p>
-        <!-- REPLACE: link to the live site or GitHub repo -->
-        <a href="[https://github.com/yourusername/project]" class="project-link">View Project</a>
-      </article>
+      <ul class="contact-list">
+        <li><a href="mailto:ahusseini@icstars.org">Email</a></li>
+        <li><a href="https://github.com/Amir-icstars">GitHub</a></li>
+        <li><a href="https://github.com/Amir-icstars">LinkedIn</a></li>
+      </ul>
+    </section>
 
-      <!-- PROJECT CARD 2 -->
-      <article class="project-card">
-        <h3>[Project Name]</h3>
-        <p>[Short description of the project.]</p>
-        <a href="[https://github.com/yourusername/project]" class="project-link">View Project</a>
-      </article>
-
-      <!-- PROJECT CARD 3 -->
-      <article class="project-card">
-        <h3>[Project Name]</h3>
-        <p>[Short description of the project.]</p>
-        <a href="[https://github.com/yourusername/project]" class="project-link">View Project</a>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ===================== CONTACT ===================== -->
-  <section id="contact" class="section">
-    <h2>Get In Touch</h2>
-    <p>[Want to work together or just say hi? Reach out.]</p>
-
-    <ul class="contact-list">
-      <!-- REPLACE: your real links. Delete any you don't use. -->
-      <li><a href="mailto:[you@example.com]">Email</a></li>
-      <li><a href="[https://github.com/yourusername]">GitHub</a></li>
-      <li><a href="[https://linkedin.com/in/yourusername]">LinkedIn</a></li>
-    </ul>
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <!-- REPLACE: your name -->
-    <p>&copy; 2026 [Your Name]. Built with HTML, CSS, and GitHub Pages.</p>
-  </footer>
-
-</body>
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <p>&copy; 2026 Amir Husseini. Built with HTML, CSS, and GitHub Pages.</p>
+    </footer>
+  </body>
 </html>
